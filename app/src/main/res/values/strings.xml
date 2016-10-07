@@ -1,0 +1,55 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">AndroidDevelopHelper</string>
+    <string name="show_app_info">show app info</string>
+    <string name="show_log_command">show log command:adb logcat -s debug_hxm</string>
+    <string name="show_app_info_ok">ok,all app info is collected</string>
+    <string name="isShowTopActivity">is show top activity info</string>
+    <string name="insert_call_log">Insert Call Log</string>
+    <string name="insert_contacts">Insert contacts</string>
+    <string name="insert_messages">Insert messages</string>
+    <string name="insert_contacts_num">Insert contacts number:</string>
+    <string name="contacts_num">contacts number:</string>
+    <string name="insert_contacts_name">contacts name:</string>
+    <string name="beginCollectAppInfo">begin Collect App Info ......</string>
+    <string name="insert_call_log_num">inster call log info number:</string>
+    <string name="call_log_type">Call Type</string>
+    <string name="type_out">out call</string>
+    <string name="type_in">in call</string>
+    <string name="phone_number">phone number:</string>
+    <string name="toast_number_0_2000">insert call log number must 0---2000</string>
+    <string name="toast_number_contact_0_2000">insert contact number must 0---2000</string>
+    <string name="number_or_name_not_null">number or name is must not null</string>
+    <string name="insert_count_contact">insert <xliff:g id="count">%d</xliff:g>contact</string>
+    <string name="insert_count_call_log">insert <xliff:g id="count">%d</xliff:g> call log</string>
+    <string name="default_insert_call_log_num">10</string>
+    <string name="default_insert_call_log_type">2</string>
+    <string name="default_insert_call_log_number">10086</string>
+    <string name="insert_mes_number">inster message number</string>
+    <string name="mes_address">message address:</string>
+    <string name="mes_body">message body:</string>
+    <string name="mes_type">message type:</string>
+    <string name="mes_type_out">out box:</string>
+    <string name="mes_type_in">in box:</string>
+    <string name="mes_read">Message read:</string>
+    <string name="mes_read_type">read</string>
+    <string name="mes_unread_type">unread</string>
+    <string name="mes_hint">input message</string>
+    <string name="insert_count_message">insert <xliff:g id="count">%d</xliff:g> message</string>
+    <string name="toast_number_message_0_2000">insert message number must 0---2000</string>
+    <string name="number_or_content_not_null">number or content is must not null</string>
+    <string name="hint_for_insert_message">The message can insert when version befor 5.0,
+        And message can not insert for android system secure reason</string>
+    <string name="show_top_activity">show top activity info</string>
+    <string name="hint_top_activity">Top activity info can be shown when version before 5.0,
+        show top activity info: adb logcat -s debug_hxm  .Top activity info can not be shown
+        when version after 5.0,we can show top activity info
+        :adb shell dumpsys activity | grep -i foc</string>
+    <string name="hint_top_activity_time_lapse">please input show top activity info time lapse(s):</string>
+    <string name="top_activity_time_lapse">show time lapse(s):</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="demos">demos</string>
+
+    <string name="title_activity_demos">DemosActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

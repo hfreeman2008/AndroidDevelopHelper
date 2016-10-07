@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="helper.develop.android.androiddevelophelper.insertmessage.InsertMessageActivity">
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/hint_for_insert_message"/>
+
+    <TextView
+        android:id="@+id/numberMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/hint"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="@string/insert_mes_number"/>
+
+    <EditText
+        android:id="@+id/numberMesEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/numberMessage"
+        android:layout_alignBottom="@id/numberMessage"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/numberMesEditText"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="@string/mes_address"/>
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/addressTextView"
+        android:layout_alignBottom="@id/addressTextView"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/bodyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/addressTextView"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="@string/mes_body"/>
+
+    <EditText
+        android:id="@+id/bodyEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bodyTextView"
+        android:layout_alignBottom="@id/bodyTextView"/>
+
+    <TextView
+        android:id="@+id/messageTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="@string/mes_type"
+        android:layout_below="@id/bodyTextView"/>
+
+    <RadioGroup
+        android:id="@+id/message_type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageTypeTextView">
+        <RadioButton
+            android:id="@+id/outbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mes_type_out"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/inbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mes_type_in"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/messageReadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:text="@string/mes_read"
+        android:layout_below="@id/message_type"/>
+
+    <RadioGroup
+        android:id="@+id/message_read"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageReadTextView">
+        <RadioButton
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mes_read_type"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mes_unread_type"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/insertMessageButton"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_read"
+        android:background="@drawable/button_click"
+        android:text="@string/insert_messages" />
+</RelativeLayout>

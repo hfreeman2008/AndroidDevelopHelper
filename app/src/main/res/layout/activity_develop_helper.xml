@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_develop_helper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="helper.develop.android.androiddevelophelper.DevelopHelperActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/showAppInfoButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickShowAppInfoButton"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_click"
+                android:text="@string/show_app_info" />
+
+            <Button
+                android:id="@+id/insertCallLog"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/showAppInfoButton"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="onClickInsertCallLogButton"
+                android:background="@drawable/button_click"
+                android:text="@string/insert_call_log" />
+
+            <Button
+                android:id="@+id/insertContacts"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/insertCallLog"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="onClickInsertContactsButton"
+                android:background="@drawable/button_click"
+                android:text="@string/insert_contacts" />
+
+            <Button
+                android:id="@+id/insertMessage"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/insertContacts"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="onClickInsertMessageButton"
+                android:background="@drawable/button_click"
+                android:text="@string/insert_messages" />
+            <Button
+                android:id="@+id/showTopActivityInfo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="onClickShowTopActivityInfoButton"
+                android:background="@drawable/button_click"
+                android:layout_below="@id/insertMessage"
+                android:text="@string/show_top_activity" />
+
+            <Button
+                android:id="@+id/test"
+                android:layout_below="@id/showTopActivityInfo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="onClickTest"
+                android:background="@drawable/button_click"
+                android:text="test" />
+
+            <Button
+                android:id="@+id/demos"
+                android:layout_below="@id/test"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="onClickDemos"
+                android:background="@drawable/button_click"
+                android:text="@string/demos" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

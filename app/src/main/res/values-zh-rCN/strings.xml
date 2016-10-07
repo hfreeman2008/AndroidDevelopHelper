@@ -1,0 +1,46 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">安桌开发小助手</string>
+    <string name="show_app_info">显示所有的应用信息</string>
+    <string name="show_log_command">显示Log命令:adb logcat -s debug_hxm</string>
+    <string name="show_app_info_ok">所有应用的信息已经输出</string>
+    <string name="isShowTopActivity">是否显示顶层activity信息</string>
+    <string name="insert_call_log">插入通话记录</string>
+    <string name="insert_contacts">插入联系人</string>
+    <string name="insert_messages">插入短信</string>
+    <string name="insert_contacts_num">插入联系人数目:</string>
+    <string name="contacts_num">联系人号码:</string>
+    <string name="insert_contacts_name">插入联系人姓名:</string>
+    <string name="beginCollectAppInfo">开始收集应用信息......</string>
+    <string name="insert_call_log_num">插入通话日志的数目:</string>
+    <string name="call_log_type">通话日志的类型</string>
+    <string name="type_out">拨出</string>
+    <string name="type_in">拨入</string>
+    <string name="phone_number">通话号码:</string>
+    <string name="toast_number_0_2000">插入通话日志的数量必须是0到2000</string>
+    <string name="insert_count_call_log">插入<xliff:g id="count">%d</xliff:g>个通话日志</string>
+    <string name="toast_number_contact_0_2000">插入联系人的数量必须是0到2000</string>
+    <string name="number_or_name_not_null">姓名和号码不能为空</string>
+    <string name="insert_count_contact">插入<xliff:g id="count">%d</xliff:g>个联系人</string>
+    <string name="insert_mes_number">插入短信的数目:</string>
+    <string name="mes_address">短信的号码:</string>
+    <string name="mes_body">短信的内容:</string>
+    <string name="mes_type">短信的类型:</string>
+    <string name="mes_type_out">发送短信</string>
+    <string name="mes_type_in">接受短信</string>
+    <string name="mes_read">短信是否已读:</string>
+    <string name="mes_read_type">已读</string>
+    <string name="mes_unread_type">未读</string>
+    <string name="mes_hint">请输入短信内容</string>
+    <string name="insert_count_message">插入<xliff:g id="count">%d</xliff:g>个短信</string>
+    <string name="toast_number_message_0_2000">插入短信的数量必须是0到2000</string>
+    <string name="number_or_content_not_null">短信的号码和内容不能为空</string>
+    <string name="hint_for_insert_message">短信在5.0之前的版本是可以插入，
+        因为android加强了系统安全的考虑，5.0之后的版本短信插不进去了</string>
+    <string name="show_top_activity">显示顶层activity的信息</string>
+    <string name="hint_top_activity">因为系统安全的考虑,5.0之前的版本可以做到显示顶层activity信息,显示信息命令
+        : adb logcat -s debug_hxm   5.0之后的版本不可以做到显示顶层activity信息,
+        我们可以使用adb shell dumpsys activity | grep -i foc 来显示</string>
+    <string name="hint_top_activity_time_lapse">请输入显示顶层activity信息的时间时隔(秒):</string>
+    <string name="top_activity_time_lapse">显示时间时隔(秒):</string>
+    <string name="demos">演示</string>
+</resources>
