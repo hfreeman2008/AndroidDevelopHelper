@@ -52,4 +52,8 @@
     <string name="title_activity_demos">DemosActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="query">query</string>
+    <string name="insert">insert</string>
+    <string name="update">update</string>
+    <string name="delete">delete</string>
 </resources>

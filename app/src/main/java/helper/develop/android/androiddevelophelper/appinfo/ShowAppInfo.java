@@ -44,12 +44,12 @@ public class ShowAppInfo {
             sb.append("dataDir:"+apps.get(i).dataDir);
             sb.append('\n');
 
-//            File dataDir = new File(apps.get(i).dataDir+"/");
-//            long dataDirLength = getFolderSize(dataDir);
-//            length = formatFileLength(dataDirLength);
-//            Log.i(TAG,apps.get(i).dataDir+": "+length);
-//            sb.append(apps.get(i).dataDir+" :"+length);
-//            sb.append('\n');
+            //File dataDir = new File(apps.get(i).dataDir);
+            //long dataDirLength = getFolderSize(dataDir);
+            //length = formatFileLength(dataDirLength);
+            //Log.i(TAG,apps.get(i).dataDir+": "+length);
+            //sb.append(apps.get(i).dataDir+" :"+length);
+            //sb.append('\n');
 
 
             Log.i(TAG, "name:"+apps.get(i).name);
@@ -182,17 +182,20 @@ public class ShowAppInfo {
         long size = 0;
         try {
             File[] fileList = file.listFiles();
-            for (int i = 0; i < fileList.length; i++)
-            {
-                if (fileList[i].isDirectory())
+            if(fileList != null){
+                for (int i = 0; i < fileList.length; i++)
                 {
-                    size = size + getFolderSize(fileList[i]);
+                    if (fileList[i].isDirectory())
+                    {
+                        size = size + getFolderSize(fileList[i]);
 
-                }else{
-                    size = size + fileList[i].length();
+                    }else{
+                        size = size + fileList[i].length();
 
+                    }
                 }
             }
+
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
