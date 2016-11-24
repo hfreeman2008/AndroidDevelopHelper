@@ -5,6 +5,7 @@ android develop helper----安卓开发小助手
 </br>
 android develop helper----安卓开发小助手
 安卓开发小助手的主界面：
+![Image text](https://github.com/hfreeman2008/AndroidDevelopHelper/blob/master/captures/device-2016-11-24-184715.png)
 
 
 1.显示手机所有的应用信息
