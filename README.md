@@ -41,6 +41,8 @@ android develop helper----安卓开发小助手
 ![Image text](https://github.com/hfreeman2008/AndroidDevelopHelper/blob/master/captures/show_top_activity_info.png)
 
 </br>
+http://blog.csdn.net/hfreeman2008/article/details/53333332
+</br>
 
 
 
