@@ -31,6 +31,17 @@
                 android:text="@string/show_app_info" />
 
             <Button
+                android:id="@+id/showTopActivityInfo"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="onClickShowTopActivityInfoButton"
+                android:background="@drawable/button_click"
+                android:layout_toRightOf="@id/showAppInfoButton"
+                android:text="@string/show_top_activity" />
+
+            <Button
                 android:id="@+id/insertCallLog"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
@@ -45,7 +56,8 @@
                 android:id="@+id/insertContacts"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/insertCallLog"
+                android:layout_below="@id/showAppInfoButton"
+                android:layout_toRightOf="@id/insertCallLog"
                 android:padding="5dp"
                 android:layout_margin="5dp"
                 android:onClick="onClickInsertContactsButton"
@@ -62,16 +74,7 @@
                 android:onClick="onClickInsertMessageButton"
                 android:background="@drawable/button_click"
                 android:text="@string/insert_messages" />
-            <Button
-                android:id="@+id/showTopActivityInfo"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:layout_margin="5dp"
-                android:onClick="onClickShowTopActivityInfoButton"
-                android:background="@drawable/button_click"
-                android:layout_below="@id/insertMessage"
-                android:text="@string/show_top_activity" />
+
 
             <Button
                 android:id="@+id/get_prop"
@@ -81,7 +84,7 @@
                 android:layout_margin="5dp"
                 android:onClick="onClickGetProp"
                 android:background="@drawable/button_click"
-                android:layout_below="@id/showTopActivityInfo"
+                android:layout_below="@id/insertMessage"
                 android:text="@string/get_system_prop" />
 
             <Button
