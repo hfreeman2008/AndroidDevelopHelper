@@ -44,5 +44,13 @@ android develop helper----安卓开发小助手
 http://blog.csdn.net/hfreeman2008/article/details/53333332
 </br>
 
+6.读取系统属性值</br>
 
+![Image text](https://github.com/hfreeman2008/AndroidDevelopHelper/blob/master/captures/get_prop.png)
+
+</br>
+
+</br>
+
+读取某个系统属性值,或读取所有的系统属性,结果保存在SD卡prop_all.txt
 
