@@ -1,6 +1,5 @@
 package helper.develop.android.androiddevelophelper;
 
-import android.content.ComponentName;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +9,7 @@ import helper.develop.android.androiddevelophelper.demos.DemosActivity;
 import helper.develop.android.androiddevelophelper.insertcalllog.InsertCallLogActivity;
 import helper.develop.android.androiddevelophelper.insertcontacts.InsertContactsActivity;
 import helper.develop.android.androiddevelophelper.insertmessage.InsertMessageActivity;
+import helper.develop.android.androiddevelophelper.prop.PropActivity;
 import helper.develop.android.androiddevelophelper.test.TestActivity;
 import helper.develop.android.androiddevelophelper.topactivityinfo.ShowTopActivityInfoActivity;
 
@@ -41,6 +41,10 @@ public class DevelopHelperActivity extends AppCompatActivity {
         startActivity(new Intent(this, ShowTopActivityInfoActivity.class));
     }
 
+
+    public void onClickGetProp(View view){
+        startActivity(new Intent(this, PropActivity.class));
+    }
 
     public void onClickTest(View view){
         startActivity(new Intent(this, TestActivity.class));

@@ -56,4 +56,13 @@
     <string name="insert">insert</string>
     <string name="update">update</string>
     <string name="delete">delete</string>
+
+    <string name="get_system_prop">get system prop</string>
+    <string name="run">run</string>
+    <string name="save_sdcard_success">save to sdcard  success</string>
+    <string name="save_sdcard_fail">save to sdcard fail</string>
+    <string name="hint_command">ro.product.name </string>
+    <string name="getProp">get system prop,please input system prop,eg:ro.product.name  ,
+        if donot iput anything, It will get all system prop and the result is saved in sdcard prop_all.txt</string>
+
 </resources>

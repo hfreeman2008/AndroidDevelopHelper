@@ -74,8 +74,19 @@
                 android:text="@string/show_top_activity" />
 
             <Button
-                android:id="@+id/test"
+                android:id="@+id/get_prop"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:onClick="onClickGetProp"
+                android:background="@drawable/button_click"
                 android:layout_below="@id/showTopActivityInfo"
+                android:text="@string/get_system_prop" />
+
+            <Button
+                android:id="@+id/test"
+                android:layout_below="@id/get_prop"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
@@ -94,9 +105,6 @@
                 android:onClick="onClickDemos"
                 android:background="@drawable/button_click"
                 android:text="@string/demos" />
-
-
-
 
         </RelativeLayout>
 

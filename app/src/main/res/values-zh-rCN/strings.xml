@@ -43,4 +43,12 @@
     <string name="hint_top_activity_time_lapse">请输入显示顶层activity信息的时间时隔(秒):</string>
     <string name="top_activity_time_lapse">显示时间时隔(秒):</string>
     <string name="demos">演示</string>
+
+    <string name="get_system_prop">读取系统属性值</string>
+    <string name="run">开始</string>
+    <string name="save_sdcard_success">成功保存到SD卡</string>
+    <string name="save_sdcard_fail">保存到SD卡失败 </string>
+    <string name="hint_command">ro.product.name </string>
+    <string name="getProp">读取系统属性,请输入:例如:ro.product.name,如果没有输入,将读取所有的系统属性,结果保存在SD卡prop_all.txt</string>
+
 </resources>
