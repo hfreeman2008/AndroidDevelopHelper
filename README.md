@@ -50,5 +50,5 @@ http://blog.csdn.net/hfreeman2008/article/details/53333332
 ![Image text](https://github.com/hfreeman2008/AndroidDevelopHelper/blob/master/captures/get_prop.png)
 
 </br>
-
+http://blog.csdn.net/hfreeman2008/article/details/58597035
 </br>
